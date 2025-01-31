@@ -4,7 +4,7 @@ import Feed from './Feed';
 import DataContext from './context/DataContext';
 
 const Home = () => {
-   const{isLoading,fetchError,searchResults}=useContext(DataContext)
+   const{isLoading,fetchError,searchResults}=useContext(DataContext);
     return (
         <main className='Home'>
            {isLoading && <p className='statusMsg'>Loading posts...</p>}
